@@ -1,0 +1,428 @@
+/*CSS DO INDEX */
+
+/* Background do site */
+body {
+  background-color: #1e272e; /* Cor de fundo do corpo */
+  color: #ffffff; /* Cor do texto */
+  font-family: Arial, sans-serif; /* Fonte do texto */
+}
+
+#titulo {
+  text-decoration: none; 
+  color: inherit;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #34495e; /* Cor de fundo da tabela */
+}
+
+th, td {
+  border: 1px solid #ffffff; /* Borda das células */
+  text-align: left;
+  padding: 8px; /* Espaçamento interno das células */
+  background-color: #1e272e;
+}
+
+th {
+  background-color:#1e272e; /* Cor de fundo do cabeçalho */
+}
+
+.imagem-tabela {
+  width: 50px; /* Tamanho da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  vertical-align: middle; /* Alinha a imagem verticalmente ao texto */
+  margin-right: 10px; /* Adiciona um espaço entre a imagem e o texto */
+}
+
+.celula-com-imagem {
+  position: relative; /* Permite posicionamento absoluto dentro da célula */
+}
+
+.nome-campeao {
+  position: absolute; /* Posicionamento absoluto */
+  top: 92%; /* Alinha o texto verticalmente ao centro */
+  left: 10px; /* Define a margem esquerda do texto */
+  transform: translateY(-50%); /* Centraliza verticalmente o texto */
+  color: white; /* Cor do texto */
+  font-weight: bold; /* Define a fonte em negrito */
+  font-size:xx-small;
+}
+
+
+.celula-progresso {
+  position: relative; /* Permite posicionamento absoluto dentro da célula */
+}
+
+.barra-progresso {
+  position: relative; /* Permite posicionamento absoluto da barra preenchida */
+  height: 20px; /* Altura da barra */
+  background-color: #ccc; /* Cor do fundo */
+}
+
+.barra-preenchida {
+  position: absolute; /* Posicionamento absoluto */
+  top: 0; /* Alinha a barra preenchida no topo da célula */
+  left: 0; /* Alinha a barra preenchida à esquerda da célula */
+  height: 100%; /* Garante que a barra preencha a altura da célula */
+  background-color:#587da3; /* Cor do preenchimento da barra */
+}
+
+.texto-progresso {
+  position: absolute; /* Posicionamento absoluto */
+  top: 50%; /* Alinha o texto verticalmente ao centro */
+  left: 50%; /* Alinha o texto horizontalmente ao centro */
+  transform: translate(-50%, -50%); /* Centraliza o texto */
+  color:#1e272e; /* Cor do texto */
+  font-weight: bold; /* Define a fonte em negrito */
+}
+
+
+/* Cabeçalho */
+#topo {
+  display: flex;
+  justify-content: space-between; /* Alinha os elementos ao longo do eixo principal com espaço entre eles */
+  align-items: center; /* Centraliza verticalmente os itens */
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+}
+
+.barra-pesquisa {
+  display: flex;
+}
+
+#pesquisa {
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+}
+
+
+/* Estilo do botão*/
+.botao {
+  display: flex; /* Adicionado para facilitar o alinhamento à direita */
+  justify-content: flex-end; /* Alinha o conteúdo dentro do div à direita */
+  margin-right: 20px; /* Ajusta a margem direita para um melhor posicionamento */
+  margin-top: 10px;
+}
+
+.botao button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color:#587da3; /* Azul padrão */
+  color: white; /* Texto branco */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transição suave para mudança de cor */
+}
+
+.botao button:hover {
+  background-color:#1e272e; /* Azul mais escuro ao passar o mouse */
+}
+
+
+
+/* Conteiner do meio */
+.container {
+  display: flex;
+}
+
+.div1, .div2, .div3 {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.div1 {
+  width: 33%;
+  margin-right: 20px;
+  text-align: center;
+  background-color:#2c3e50;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  color: #ffffff; /* Cor do texto */
+}
+
+.div1 h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.div1 img {
+  display: inline-block; /* Garante que as imagens fiquem em linha */
+  width: 120px;
+  height: auto;
+
+}
+
+
+.div1 p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.div2 {
+  width: 33%;
+  margin-right: 20px;
+  text-align: center;
+  background-color:#2c3e50;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  color: #ffffff; /* Cor do texto */
+}
+
+.div2 table {
+  width: 100%; /* Largura da tabela */
+  max-width: 100%; /* Largura máxima da tabela */
+  height: 50%; /* Altura da tabela */
+  max-height: 200%; /* Altura máxima da tabela */
+  overflow-y: auto; /* Adiciona uma barra de rolagem vertical caso o conteúdo exceda a altura máxima */
+  background-color:#1e272e;
+}
+
+.div3 {
+  width: 33%;
+  text-align: center;
+  background-color:#2c3e50;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  color: #ffffff; /* Cor do texto */
+}
+
+/* Estilo do Modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+  background-color:#2c3e50;
+  margin: 10% auto; /* Reduz a margem superior */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px; /* Borda arredondada */
+  width: 60%; /* Menos largo */
+  max-width: 400px; /* Limita a largura máxima */
+}
+
+.modal-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close, .fechar {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus, 
+.fechar:hover,
+.fechar:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content form input[type="text"] {
+  width: calc(100% - 20px); /* Aumenta o tamanho das caixas de texto */
+  padding: 10px;
+  margin-bottom: 15px; /* Aumenta a distância entre as caixas de texto */
+  border: 1px solid #888;
+  border-radius: 5px; /* Bordas arredondadas para as caixas de texto */
+  box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+  background-color:#1e272e;
+  color: white;
+}
+
+
+
+/*cabeçalho tabela*/
+#cima-tabela {
+  display: flex;
+  justify-content: space-between; /* Distribui as divs igualmente ao longo do contêiner */
+  align-items: center; /* Centraliza verticalmente os itens dentro do contêiner */
+}
+
+/*botao filtrar*/
+#filtro-elo{
+  margin-left: 10px;
+}
+
+/* Esconde a seta padrão do <select> */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Adicione outras propriedades de estilo conforme necessário */
+}
+
+/* Estiliza o elemento <select> */
+#select-elo {
+  padding: 3px 9px;
+  border-radius: 5px;
+  border: 1px solid #587da3;
+  background-color:#587da3;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Estiliza a seta do <select> */
+#select-elo::after {
+  content: '\25BC'; /* Unicode para uma seta para baixo */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: white;
+  pointer-events: none; /* Garante que a seta não seja clicável */
+}
+
+
+
+
+/* Lista dos jogadores disponiveis */
+#lista-jogadores {
+  width: 100%;
+  height: 400px;
+  background-color: #2c3e50; /* Cor de fundo da lista de jogadores */
+  border: 1px solid #34495e; /* Borda da lista de jogadores */
+  text-align: center;
+  color: #ffffff; /* Cor do texto */
+  margin-top: 20px;
+}
+
+a {
+  color: white; /* Define a cor dos links como branco */
+  text-decoration: none; /* Remove sublinhado dos links */
+}
+
+a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre os links */
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////// */
+/* CSS DO PERFIL */
+
+#div1_perfil {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  background-size: cover;
+  background-position: center 20%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #ffffff; /* Cor do texto */
+}
+
+#nick_perfil {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+#nick_perfil span {
+  margin-right: 10px; /* Espaçamento entre o ícone e o texto do nick */
+}
+
+#nick_perfil img {
+  width: 50px; /* Tamanho do ícone */
+  height: 50px;
+}
+
+/*Conteiner de div em perfil*/
+.container_perfil {
+  display: flex;
+}
+
+.campeoes_perfil, .status_perfil, .posicao_perfil {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid black;
+  display: inline-block;
+  width: 27%; /* Define a largura de cada div para ocupar 27% da largura total */
+  text-align: center;
+  height: 300px;
+  background-color:#2c3e50;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  color: #ffffff; /* Cor do texto */
+  margin-right: 10px; /* Margem à direita para separar as divs */
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.divCampeoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgCampeoes {
+  margin-right: 10px;
+}
+
+.pCampeoes {
+  text-align: center;
+}
+
+/*Lista dos campeoes mais jogados*/
+#lista-campeoes {
+  list-style-type: none; /* Remove os marcadores de lista padrão */
+  padding: 0; /* Remove o preenchimento padrão da lista */
+  color: white;
+}
+
+#lista-campeoes li {
+  background-color:#1e272e; /* Cor de fundo dos itens da lista */
+  padding: 10px; /* Preenchimento interno dos itens da lista */
+  margin-bottom: 5px; /* Margem inferior entre os itens da lista */
+  border-radius: 5px; /* Borda arredondada dos itens da lista */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave dos itens da lista */
+}
+
+#lista-campeoes li:hover {
+  background-color: #e0e0e0; /* Cor de fundo dos itens da lista ao passar o mouse */
+  cursor: pointer; /* Altera o cursor para indicar que os itens são clicáveis */
+}
